@@ -1,9 +1,21 @@
-# Hi there! 👋
-
 <div align="center">
-  <a href="YOUR_HOSTED_URL_HERE">
-    <img src="https://img.shields.io/badge/View%20My%20Animated%20Intro-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Animated Intro"/>
-  </a>
+  
+# 👋 Welcome to My GitHub Profile!
+
+<a href="https://upadhyaypranjal.github.io/intro/">
+  <img src="https://img.shields.io/badge/🚀_View_My_Animated_Intro-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="View Animated Intro"/>
+</a>
+
 </div>
 
-<!-- You can add more content here -->
+---
+
+## 🎓 About Me
+- 📚 ECE Student at IIITDM Kurnool (2023-2028)
+- 📍 From Surat, Gujarat
+- 💻 Passionate about Hardware Design & Embedded Systems
+
+## 🛠️ Tech Stack
+- **Hardware Design:** Verilog, VHDL, FPGA
+- **Embedded Systems:** ESP32, IoT, MQTT Protocol
+- **Languages:** C, Python, Embedded C
