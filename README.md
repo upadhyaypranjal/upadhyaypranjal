@@ -1,21 +1,23 @@
+<h1 align="center">
+  Hi there, I'm Pranjal Upadhyay 👋
+</h1>
+
 <div align="center">
   
-# 👋 Welcome to My GitHub Profile!
+  <a href="https://github.com/upadhyaypranjal">
+    <img 
+      src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&color=36BCF7&size=25&center=true&width=500&lines=Electronics+and+Communication+Engineering;Indian+Institute+of+Information+Technology;Design+and+Manufacturing,+Kurnool;B.Tech+%2B+M.Tech+Dual+Degree+(2023-2028);From+Surat,+Gujarat" 
+      alt="Typing SVG" 
+    />
+  </a>
+  
+  <br><br>
 
-<a href="https://upadhyaypranjal.github.io/intro/">
-  <img src="https://img.shields.io/badge/🚀_View_My_Animated_Intro-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="View Animated Intro"/>
-</a>
+  <a href="https://www.linkedin.com/in/pranjalupadhyay0142/" target="_blank">
+    <img 
+      src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" 
+      alt="LinkedIn Badge"
+    />
+  </a>
 
 </div>
-
----
-
-## 🎓 About Me
-- 📚 ECE Student at IIITDM Kurnool (2023-2028)
-- 📍 From Surat, Gujarat
-- 💻 Passionate about Hardware Design & Embedded Systems
-
-## 🛠️ Tech Stack
-- **Hardware Design:** Verilog, VHDL, FPGA
-- **Embedded Systems:** ESP32, IoT, MQTT Protocol
-- **Languages:** C, Python, Embedded C
