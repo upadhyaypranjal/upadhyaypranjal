@@ -5,7 +5,7 @@
   
   <a href="https://github.com/upadhyaypranjal">
     <img 
-      src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&color=36BCF7&size=20&center=true&width=900&lines=🎓+Electronics+and+Communication+Engineering;🏛️+Indian+Institute+of+Information+Technology;🏭+Design+and+Manufacturing,+Kurnool;📚+B.Tech+%2B+M.Tech+Dual+Degree+(2023-2028);📍+From+Surat,+Gujarat" 
+      src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&color=36BCF7&size=20&center=true&width=1000&lines=🎓+Electronics+and+Communication+Engineering;🏛️+Indian+Institute+of+Information+Technology+Design+and+Manufacturing,+Kurnool;📚+B.Tech+%2B+M.Tech+Dual+Degree+(2023-2028);📍+From+Surat,+Gujarat" 
       alt="Typing SVG" 
     />
   </a>
