@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Welcome%20To%20My%20Profile&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Pranjal%20Upadhyay&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%"/>
 </div>
 
 <div align="center">
@@ -10,7 +10,7 @@
   </h1>
 
   <!-- Animated Education Info -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=500&color=00D9FF&center=true&vCenter=true&width=1000&height=80&lines=%F0%9F%8E%93+Electronics+and+Communication+Engineering;%F0%9F%8F%9B%EF%B8%8F+Indian+Institute+of+Information+Technology+Design+and+Manufacturing%2C+Kurnool;%F0%9F%93%9A+B.Tech+%2B+M.Tech+Dual+Degree+(2023-2028);%F0%9F%93%8D+From+Surat%2C+Gujarat+%F0%9F%87%AE%F0%9F%87%B3" alt="Education Info" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=500&color=00D9FF&center=true&vCenter=true&width=1000&height=80&lines=%F0%9F%8E%93+Electronics+and+Communication+Engineering;%F0%9F%8F%9B%EF%B8%8F+Indian+Institute+of+Information+Technology+Design+and+Manufacturing%2C+Kurnool;%F0%9F%93%9A+B.Tech+%2B+M.Tech+Dual+Degree+(2023-2028);%F0%9F%93%8D+Surat%2C+Gujarat+%F0%9F%87%AE%F0%9F%87%B3" alt="Education Info" />
 
   <br><br>
 
@@ -246,10 +246,4 @@ hobbies:
 <!-- Footer Wave -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
-</div>
-
-<div align="center">
-  
-### ⭐ Show some ❤️ by starring some of the repositories!
-  
 </div>
