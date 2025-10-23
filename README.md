@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, Linkedin, Mail, Cpu, Zap, Award, GitBranch, Star, GitCommit, TrendingUp, BookOpen, Lightbulb, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Cpu, Zap, Award, GitBranch, Star, GitCommit, TrendingUp, Code } from 'lucide-react';
 
 const ReadmePreview = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -13,7 +13,6 @@ const ReadmePreview = () => {
   const observerRefs = useRef([]);
 
   useEffect(() => {
-    // Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,23 +35,22 @@ const ReadmePreview = () => {
   }, []);
 
   useEffect(() => {
-    // Stop wave after 3 seconds
     const timer = setTimeout(() => setWaveAnimation(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    // Fetch GitHub stats dynamically
     fetch("https://api.github.com/users/upadhyaypranjal")
       .then(res => res.json())
       .then(data => {
         setGitHubStats({
           repos: data.public_repos || 0,
-          stars: 50, // GitHub API needs extra call for stars
-          contributions: 500, // Contributions need GraphQL or manual value
-          projects: 15 // Can be set manually
+          stars: 50,
+          contributions: 500,
+          projects: 15
         });
-      });
+      })
+      .catch(err => console.error('Error fetching GitHub stats:', err));
   }, []);
 
   const projects = [
@@ -132,12 +130,30 @@ const ReadmePreview = () => {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 animate-pulse"></div>
         <div className="container mx-auto px-4 py-16 relative z-10 text-center">
-          <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 inline-flex items-center justify-center gap-3 animate-fadeInUp">
+          <h2 
+            className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 inline-flex items-center justify-center gap-3"
+            style={{
+              animation: 'fadeInUp 1s ease-out forwards'
+            }}
+          >
             Hi There! 
-            <span className={`inline-block text-6xl ${waveAnimation ? 'animate-wave' : ''}`}>👋</span>
+            <span 
+              className="inline-block text-6xl"
+              style={{
+                animation: waveAnimation ? 'wave 2.5s ease-in-out infinite' : 'none',
+                transformOrigin: '70% 70%'
+              }}
+            >
+              👋
+            </span>
           </h2>
 
-          <div className="inline-block my-8 animate-float">
+          <div 
+            className="inline-block my-8"
+            style={{
+              animation: 'float 3s ease-in-out infinite'
+            }}
+          >
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-5xl font-bold">
                 PU
@@ -145,7 +161,13 @@ const ReadmePreview = () => {
             </div>
           </div>
 
-          <h1 className="text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+          <h1 
+            className="text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+            style={{
+              backgroundSize: '200% 200%',
+              animation: 'gradient 3s ease infinite'
+            }}
+          >
             Pranjal Upadhyay
           </h1>
 
@@ -182,7 +204,13 @@ const ReadmePreview = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 blur-2xl opacity-30 animate-pulse"></div>
             <Award className="w-16 h-16 mx-auto mb-4 text-yellow-400 animate-bounce relative z-10" />
           </div>
-          <h2 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent animate-gradient">
+          <h2 
+            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent"
+            style={{
+              backgroundSize: '200% 200%',
+              animation: 'gradient 3s ease infinite'
+            }}
+          >
             Featured Projects
           </h2>
           <div className="w-32 h-1 mx-auto mt-4 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-full"></div>
@@ -246,7 +274,13 @@ const ReadmePreview = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 blur-2xl opacity-30 animate-pulse"></div>
             <TrendingUp className="w-16 h-16 mx-auto mb-4 text-green-400 animate-bounce relative z-10" />
           </div>
-          <h2 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
+          <h2 
+            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent"
+            style={{
+              backgroundSize: '200% 200%',
+              animation: 'gradient 3s ease infinite'
+            }}
+          >
             GitHub Statistics
           </h2>
           <div className="w-32 h-1 mx-auto mt-4 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 rounded-full"></div>
@@ -284,7 +318,7 @@ const ReadmePreview = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-20px); }
@@ -292,10 +326,6 @@ const ReadmePreview = () => {
         @keyframes gradient {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
         }
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(30px); }
@@ -310,41 +340,6 @@ const ReadmePreview = () => {
           50% { transform: rotate(10deg); }
           60% { transform: rotate(0deg); }
           100% { transform: rotate(0deg); }
-        }
-        @keyframes typewriter {
-          from { width: 0; }
-          to { width: 100%; }
-        }
-        @keyframes progress {
-          from { width: 0%; }
-          to { width: 65%; }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient 3s ease infinite;
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.8s ease-out forwards;
-        }
-        .animate-fadeInUp {
-          animation: fadeInUp 1s ease-out forwards;
-        }
-        .animate-wave {
-          animation: wave 2.5s ease-in-out infinite;
-          transform-origin: 70% 70%;
-          display: inline-block;
-        }
-        .animate-typewriter {
-          animation: typewriter 3s steps(50) forwards;
-          display: inline-block;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-        .animate-progress {
-          animation: progress 2s ease-out forwards;
         }
       `}</style>
     </div>
