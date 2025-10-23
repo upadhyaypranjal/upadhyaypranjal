@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=2000&pause=500&color=F75C7E&center=true&vCenter=true&width=800&height=80&lines=PRANJAL+UPADHYAY;प्रांजल+उपाध्याय;PRANJAL+UPADHYAY" alt="Name" />
+# <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=2000&pause=500&color=F75C7E&center=true&vCenter=true&width=800&height=80&lines=PRANJAL+UPADHYAY;PRANJAL+UPADHYAY" alt="Name" />
 
 <h2>
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Digital+Design+Enthusiast+💡;IoT+Developer+🌐;FPGA+%26+VLSI+Explorer+⚡;Embedded+Systems+Engineer+🔧" alt="Typing SVG" />
