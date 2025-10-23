@@ -1,13 +1,11 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=150&section=header&text=Hi%20There!%20%F0%9F%91%8B&fontSize=60&fontColor=fff&fontAlignY=35" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=150&section=header&text=Pranjal%20Upadhyay&fontSize=60&fontColor=fff&fontAlignY=35" width="100%"/>
 </div>
 
 <div align="center">
-  <h1>Pranjal Upadhyay</h1>
-  <h3>Hardware Designer | Embedded Systems Engineer | FPGA Developer</h3>
-  <p>
-    Third-year B.Tech + M.Tech Dual Degree student at <b>IIITDM Kurnool</b> with a deep passion for digital electronics, VLSI, and building practical IoT solutions.
-  </p>
+  <h1>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hi+There!+%F0%9F%91%8B;I'm+Pranjal+Upadhyay;Hardware+Designer+%F0%9F%92%BB;IoT+Enthusiast+%E2%9A%A1;FPGA+Developer+%F0%9F%94%A7" alt="Typing SVG" />
+  </h1>
 
   <a href="https://www.linkedin.com/in/pranjalupadhyay0142/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
@@ -25,12 +23,9 @@
 
 ### **🚀 About Me**
 
-I am a dedicated Electronics and Communication Engineering student with a strong foundation in digital logic design and computer architecture. My core interests lie in designing and optimizing hardware, from circuit-level VLSI design to system-level FPGA implementation. I am constantly exploring the intersection of hardware and software to create efficient embedded systems and IoT devices.
-
-- 🔭 I’m currently working on **advanced VLSI design projects and RISC-V architecture**.
-- 🌱 I’m focused on learning **System-on-Chip (SoC) design and real-time operating systems (RTOS)**.
-- 👯 I’m open to collaborating on **open-source hardware design, embedded systems, and IoT projects**.
-- 💬 Ask me about **Verilog/VHDL, Digital Logic, ESP32, or FPGA development**.
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=4000&pause=500&color=00D9FF&center=true&vCenter=true&width=800&height=100&lines=%F0%9F%8E%93+B.Tech+%2B+M.Tech+Dual+Degree+in+Electronics+%26+Communication+Engineering;%F0%9F%8F%9B%EF%B8%8F+Indian+Institute+of+Information+Technology+Design+and+Manufacturing%2C+Kurnool;%F0%9F%92%A1+Core+Interests%3A+VLSI%2C+FPGA+Design%2C+and+Embedded+IoT+Solutions;%F0%9F%94%AC+Currently+Learning%3A+RISC-V+Architecture+%26+System-on-Chip+(SoC)+Design" alt="About Me Animation" />
+</div>
 
 ---
 
@@ -42,7 +37,7 @@ I am a dedicated Electronics and Communication Engineering student with a strong
 | :---: | :--- |
 | **Hardware Description** | ![Verilog](https://img.shields.io/badge/Verilog-00979D?style=for-the-badge&logo=v&logoColor=white) ![VHDL](https://img.shields.io/badge/VHDL-543978?style=for-the-badge&logo=v&logoColor=white) ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-DAA520?style=for-the-badge&logo=v&logoColor=white) |
 | **FPGA & Design Tools** | ![Xilinx](https://img.shields.io/badge/Xilinx-E01F27?style=for-the-badge&logo=xilinx&logoColor=white) ![Vivado](https://img.shields.io/badge/Vivado-FF6F00?style=for-the-badge&logo=xilinx&logoColor=white) ![Quartus](https://img.shields.io/badge/Quartus-0071C5?style=for-the-badge&logo=intel&logoColor=white) |
-| **Embedded & IoT** | ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![ESP32](httpshttps://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white) ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white) ![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=eclipsemosquitto&logoColor=white) |
+| **Embedded & IoT** | ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white) ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white) ![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=eclipsemosquitto&logoColor=white) |
 | **Programming & Tools** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
 </div>
