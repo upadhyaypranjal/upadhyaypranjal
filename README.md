@@ -1,12 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, Linkedin, Mail, Eye, Code, Cpu, Zap, Award, GitBranch, Star, GitCommit, TrendingUp, BookOpen, Lightbulb } from 'lucide-react';
+import { Github, Linkedin, Mail, Cpu, Zap, Award, GitBranch, Star, GitCommit, TrendingUp, BookOpen, Lightbulb, Code } from 'lucide-react';
 
 const ReadmePreview = () => {
   const [isVisible, setIsVisible] = useState({});
   const [waveAnimation, setWaveAnimation] = useState(true);
+  const [gitHubStats, setGitHubStats] = useState({
+    repos: 0,
+    stars: 0,
+    contributions: 0,
+    projects: 0
+  });
   const observerRefs = useRef([]);
 
   useEffect(() => {
+    // Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,14 +36,29 @@ const ReadmePreview = () => {
   }, []);
 
   useEffect(() => {
+    // Stop wave after 3 seconds
     const timer = setTimeout(() => setWaveAnimation(false), 3000);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    // Fetch GitHub stats dynamically
+    fetch("https://api.github.com/users/upadhyaypranjal")
+      .then(res => res.json())
+      .then(data => {
+        setGitHubStats({
+          repos: data.public_repos || 0,
+          stars: 50, // GitHub API needs extra call for stars
+          contributions: 500, // Contributions need GraphQL or manual value
+          projects: 15 // Can be set manually
+        });
+      });
   }, []);
 
   const projects = [
     {
       title: "8-Bit Kogge-Stone Adder",
-      description: "Designed and implemented a high-performance 8-bit parallel prefix adder, optimized for speed by minimizing carry propagation delay. The design was verified through extensive testbenches and synthesized for FPGA implementation to analyze performance metrics.",
+      description: "Designed and implemented a high-performance 8-bit parallel prefix adder, optimized for speed by minimizing carry propagation delay. Verified through testbenches and synthesized for FPGA implementation.",
       tags: ["Verilog", "Digital Design", "FPGA", "Vivado"],
       icon: <Cpu className="w-8 h-8" />,
       gradient: "from-purple-600 via-pink-600 to-red-600",
@@ -44,7 +66,7 @@ const ReadmePreview = () => {
     },
     {
       title: "ESP32 Electronic Voting Machine",
-      description: "Developed a secure IoT-based voting system using an ESP32 microcontroller. The system captures votes, prevents tampering, and transmits results in real-time to a central server via the MQTT protocol, showcasing a practical application of embedded systems in secure data handling.",
+      description: "Secure IoT voting system using ESP32. Captures votes, prevents tampering, and transmits results in real-time via MQTT to a central server.",
       tags: ["ESP32", "C++", "Arduino", "IoT", "MQTT"],
       icon: <Zap className="w-8 h-8" />,
       gradient: "from-blue-600 via-cyan-600 to-teal-600",
@@ -88,11 +110,9 @@ const ReadmePreview = () => {
       >
         <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl group relative overflow-hidden">
           <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-          
           <div className={`relative inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${gradient} mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
             {icon}
           </div>
-          
           <div className="relative">
             <div className={`text-5xl font-bold mb-2 bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>
               {count}+
@@ -111,181 +131,40 @@ const ReadmePreview = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 animate-pulse"></div>
-        <div className="container mx-auto px-4 py-16 relative z-10">
-          <div className="text-center">
-            {/* Animated Hi There with Hand Wave */}
-            <div className="mb-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 inline-flex items-center gap-3 animate-fadeInUp">
-                Hi There! 
-                <span className={`inline-block text-5xl md:text-6xl ${waveAnimation ? 'animate-wave' : ''}`}>
-                  👋
-                </span>
-              </h2>
-            </div>
+        <div className="container mx-auto px-4 py-16 relative z-10 text-center">
+          <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 inline-flex items-center justify-center gap-3 animate-fadeInUp">
+            Hi There! 
+            <span className={`inline-block text-6xl ${waveAnimation ? 'animate-wave' : ''}`}>👋</span>
+          </h2>
 
-            <div className="inline-block mb-6 animate-float">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
-                <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-5xl font-bold">
-                  PU
-                </div>
+          <div className="inline-block my-8 animate-float">
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
+              <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-5xl font-bold">
+                PU
               </div>
-            </div>
-            
-            <h1 className="text-6xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
-              Pranjal Upadhyay
-            </h1>
-            
-            {/* Animated Education Line */}
-            <div className="mb-8 mt-6">
-              <div className="inline-block">
-                <p className="text-lg md:text-xl text-gray-300 animate-typewriter overflow-hidden whitespace-nowrap border-r-4 border-cyan-400 pr-2 font-mono">
-                  B.Tech + M.Tech | Electronics & Communication Engineering
-                </p>
-              </div>
-              <p className="text-sm md:text-base text-cyan-400 mt-2 animate-fadeIn" style={{ animationDelay: '3s' }}>
-                IIITDM Kurnool
-              </p>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["Hardware Designer 💻", "IoT Enthusiast ⚡", "FPGA Developer 🔧"].map((role, i) => (
-                <span
-                  key={i}
-                  className="px-4 py-2 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-full text-sm border border-blue-500/50 backdrop-blur-sm animate-fadeIn"
-                  style={{ animationDelay: `${3.5 + i * 0.2}s` }}
-                >
-                  {role}
-                </span>
-              ))}
-            </div>
-            
-            <div className="flex justify-center gap-4">
-              <a href="https://www.linkedin.com/in/pranjalupadhyay0142/" className="transform hover:scale-110 transition-all duration-300 animate-fadeIn" style={{ animationDelay: '4.2s' }}>
-                <div className="p-3 bg-blue-600 rounded-lg shadow-lg hover:shadow-blue-500/50">
-                  <Linkedin className="w-6 h-6" />
-                </div>
-              </a>
-              <a href="https://github.com/upadhyaypranjal" className="transform hover:scale-110 transition-all duration-300 animate-fadeIn" style={{ animationDelay: '4.4s' }}>
-                <div className="p-3 bg-gray-800 rounded-lg shadow-lg hover:shadow-gray-500/50">
-                  <Github className="w-6 h-6" />
-                </div>
-              </a>
-              <a href="mailto:pranjal2004upadhyay@gmail.com" className="transform hover:scale-110 transition-all duration-300 animate-fadeIn" style={{ animationDelay: '4.6s' }}>
-                <div className="p-3 bg-red-600 rounded-lg shadow-lg hover:shadow-red-500/50">
-                  <Mail className="w-6 h-6" />
-                </div>
-              </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* About Me Section */}
-      <div className="container mx-auto px-4 py-20">
-        <div
-          ref={el => observerRefs.current[20] = el}
-          data-section="about"
-          className={`transition-all duration-1000 ${
-            isVisible.about ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <div className="text-center mb-16">
-            <div className="inline-block relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 blur-2xl opacity-30 animate-pulse"></div>
-              <BookOpen className="w-16 h-16 mx-auto mb-4 text-cyan-400 animate-bounce relative z-10" />
-            </div>
-            <h2 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-4 animate-gradient">
-              About Me
-            </h2>
-            <div className="w-32 h-1 mx-auto bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full"></div>
-          </div>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="relative">
-              {/* Decorative elements */}
-              <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"></div>
-              
-              <div className="relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-3xl p-1 backdrop-blur-sm">
-                <div className="bg-gradient-to-br from-gray-900/90 to-black/90 rounded-3xl p-10">
-                  <div className="space-y-8">
-                    {/* Education Card */}
-                    <div className="group relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                      <div className="relative flex items-start gap-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-6 rounded-2xl border border-cyan-500/30 group-hover:border-cyan-500/60 transition-all duration-500">
-                        <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-xl blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                          <div className="relative p-4 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-xl group-hover:scale-110 transition-transform flex-shrink-0 shadow-xl">
-                            <Award className="w-8 h-8" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition-colors">Education</h3>
-                          <p className="text-gray-200 leading-relaxed text-lg mb-2">
-                            B.Tech + M.Tech Dual Degree in Electronics & Communication Engineering
-                          </p>
-                          <p className="text-gray-400 text-base flex items-center gap-2">
-                            <span className="inline-block w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
-                            Indian Institute of Information Technology Design and Manufacturing, Kurnool
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+          <h1 className="text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+            Pranjal Upadhyay
+          </h1>
 
-                    {/* Core Interests Card */}
-                    <div className="group relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                      <div className="relative flex items-start gap-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-6 rounded-2xl border border-purple-500/30 group-hover:border-purple-500/60 transition-all duration-500">
-                        <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                          <div className="relative p-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl group-hover:scale-110 transition-transform flex-shrink-0 shadow-xl">
-                            <Cpu className="w-8 h-8" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-purple-400 mb-3 group-hover:text-purple-300 transition-colors">Core Interests</h3>
-                          <p className="text-gray-200 leading-relaxed text-lg">
-                            VLSI Design, FPGA Development, and Embedded IoT Solutions
-                          </p>
-                          <div className="flex flex-wrap gap-2 mt-3">
-                            {["VLSI", "FPGA", "IoT"].map((interest, i) => (
-                              <span key={i} className="px-3 py-1 bg-purple-500/20 border border-purple-500/50 rounded-full text-sm text-purple-300">
-                                {interest}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Currently Learning Card */}
-                    <div className="group relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-teal-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                      <div className="relative flex items-start gap-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-6 rounded-2xl border border-green-500/30 group-hover:border-green-500/60 transition-all duration-500">
-                        <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-teal-600 rounded-xl blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                          <div className="relative p-4 bg-gradient-to-br from-green-600 to-teal-600 rounded-xl group-hover:scale-110 transition-transform flex-shrink-0 shadow-xl">
-                            <Lightbulb className="w-8 h-8" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-green-400 mb-3 group-hover:text-green-300 transition-colors">Currently Learning</h3>
-                          <p className="text-gray-200 leading-relaxed text-lg">
-                            RISC-V Architecture & System-on-Chip (SoC) Design
-                          </p>
-                          <div className="mt-3 flex items-center gap-2">
-                            <div className="w-full bg-gray-700 rounded-full h-2">
-                              <div className="bg-gradient-to-r from-green-500 to-teal-500 h-2 rounded-full animate-progress" style={{ width: '65%' }}></div>
-                            </div>
-                            <span className="text-green-400 text-sm font-semibold">65%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div className="flex justify-center gap-4">
+            <a href="https://www.linkedin.com/in/pranjalupadhyay0142/" className="transform hover:scale-110 transition-all duration-300">
+              <div className="p-3 bg-blue-600 rounded-lg shadow-lg hover:shadow-blue-500/50">
+                <Linkedin className="w-6 h-6" />
               </div>
-            </div>
+            </a>
+            <a href="https://github.com/upadhyaypranjal" className="transform hover:scale-110 transition-all duration-300">
+              <div className="p-3 bg-gray-800 rounded-lg shadow-lg hover:shadow-gray-500/50">
+                <Github className="w-6 h-6" />
+              </div>
+            </a>
+            <a href="mailto:pranjal2004upadhyay@gmail.com" className="transform hover:scale-110 transition-all duration-300">
+              <div className="p-3 bg-red-600 rounded-lg shadow-lg hover:shadow-red-500/50">
+                <Mail className="w-6 h-6" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -324,10 +203,7 @@ const ReadmePreview = () => {
             >
               <a href={project.link} className="block group h-full">
                 <div className="relative h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
-                  {/* Animated background gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                  
-                  {/* Icon with gradient background */}
                   <div className={`relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${project.gradient} mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
                     <div className="text-white">{project.icon}</div>
                   </div>
@@ -349,11 +225,6 @@ const ReadmePreview = () => {
                         {tag}
                       </span>
                     ))}
-                  </div>
-
-                  {/* Hover effect overlay */}
-                  <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                    <Github className="w-8 h-8 text-gray-400" />
                   </div>
                 </div>
               </a>
@@ -384,14 +255,14 @@ const ReadmePreview = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           <StatCard
             title="Repositories"
-            value="25"
+            value={gitHubStats.repos}
             icon={<GitBranch className="w-8 h-8 text-white" />}
             gradient="from-blue-600 to-cyan-600"
             delay={0}
           />
           <StatCard
             title="Contributions"
-            value="500"
+            value={gitHubStats.contributions}
             icon={<GitCommit className="w-8 h-8 text-white" />}
             gradient="from-purple-600 to-pink-600"
             delay={200}
@@ -399,13 +270,13 @@ const ReadmePreview = () => {
           <StatCard
             title="Stars Earned"
             icon={<Star className="w-8 h-8 text-white" />}
-            value="50"
+            value={gitHubStats.stars}
             gradient="from-yellow-600 to-orange-600"
             delay={400}
           />
           <StatCard
             title="Projects"
-            value="15"
+            value={gitHubStats.projects}
             icon={<Code className="w-8 h-8 text-white" />}
             gradient="from-green-600 to-teal-600"
             delay={600}
@@ -457,19 +328,20 @@ const ReadmePreview = () => {
         }
         .animate-fadeIn {
           animation: fadeIn 0.8s ease-out forwards;
-          opacity: 0;
         }
         .animate-fadeInUp {
-          animation: fadeInUp 1s ease-out;
+          animation: fadeInUp 1s ease-out forwards;
         }
         .animate-wave {
-          animation: wave 2.5s ease-in-out;
+          animation: wave 2.5s ease-in-out infinite;
           transform-origin: 70% 70%;
           display: inline-block;
         }
         .animate-typewriter {
           animation: typewriter 3s steps(50) forwards;
           display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
         }
         .animate-progress {
           animation: progress 2s ease-out forwards;
