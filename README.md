@@ -1,345 +1,108 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Github, Linkedin, Mail, Cpu, Zap, Award, GitBranch, Star, GitCommit, TrendingUp, Code } from 'lucide-react';
+# Hi There! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-export default function Portfolio() {
-  const [isVisible, setIsVisible] = useState({});
-  const [waveRotation, setWaveRotation] = useState(0);
-  const [floatOffset, setFloatOffset] = useState(0);
-  const [gradientPosition, setGradientPosition] = useState(0);
-  const [gitHubStats, setGitHubStats] = useState({
-    repos: 0,
-    stars: 50,
-    contributions: 500,
-    projects: 15
-  });
-  const observerRefs = useRef([]);
+<div align="center">
+  
+  ### I'm Pranjal Upadhyay
+  
+  *Electrical & Electronics Engineering Student | Digital Design Enthusiast | IoT Developer*
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranjalupadhyay0142/)
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/upadhyaypranjal)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pranjal2004upadhyay@gmail.com)
+  
+</div>
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(prev => ({
-              ...prev,
-              [entry.target.dataset.section]: true
-            }));
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+---
 
-    observerRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
+## 🏆 Featured Projects
 
-    return () => observer.disconnect();
-  }, []);
+### 🔌 8-Bit Kogge-Stone Adder
+Designed and implemented a high-performance 8-bit parallel prefix adder, optimized for speed by minimizing carry propagation delay. Verified through testbenches and synthesized for FPGA implementation.
 
-  useEffect(() => {
-    let frame = 0;
-    const steps = [0, 14, -8, 14, -4, 10, 0, 0];
-    let step = 0;
-    
-    const timer = setInterval(() => {
-      if (frame < 250) {
-        setWaveRotation(steps[step % steps.length]);
-        step++;
-        frame++;
-      } else {
-        setWaveRotation(0);
-      }
-    }, 100);
+**Tech Stack:** `Verilog` `Digital Design` `FPGA` `Vivado`
 
-    return () => clearInterval(timer);
-  }, []);
+[![View Project](https://img.shields.io/badge/View_Project-8A2BE2?style=for-the-badge)](https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder)
 
-  useEffect(() => {
-    let offset = 0;
-    const timer = setInterval(() => {
-      offset += 0.05;
-      setFloatOffset(Math.sin(offset) * 20);
-    }, 50);
+---
 
-    return () => clearInterval(timer);
-  }, []);
+### ⚡ ESP32 Electronic Voting Machine
+Secure IoT voting system using ESP32. Captures votes, prevents tampering, and transmits results in real-time via MQTT to a central server.
 
-  useEffect(() => {
-    let pos = 0;
-    const timer = setInterval(() => {
-      pos = (pos + 1) % 200;
-      setGradientPosition(pos);
-    }, 30);
+**Tech Stack:** `ESP32` `C++` `Arduino` `IoT` `MQTT`
 
-    return () => clearInterval(timer);
-  }, []);
+[![View Project](https://img.shields.io/badge/View_Project-00979D?style=for-the-badge)](https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine)
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/upadhyaypranjal")
-      .then(res => res.json())
-      .then(data => {
-        setGitHubStats(prev => ({
-          ...prev,
-          repos: data.public_repos || 0
-        }));
-      })
-      .catch(() => {});
-  }, []);
+---
 
-  const projects = [
-    {
-      title: "8-Bit Kogge-Stone Adder",
-      description: "Designed and implemented a high-performance 8-bit parallel prefix adder, optimized for speed by minimizing carry propagation delay. Verified through testbenches and synthesized for FPGA implementation.",
-      tags: ["Verilog", "Digital Design", "FPGA", "Vivado"],
-      icon: <Cpu className="w-8 h-8" />,
-      gradient: "from-purple-600 via-pink-600 to-red-600",
-      link: "https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder"
-    },
-    {
-      title: "ESP32 Electronic Voting Machine",
-      description: "Secure IoT voting system using ESP32. Captures votes, prevents tampering, and transmits results in real-time via MQTT to a central server.",
-      tags: ["ESP32", "C++", "Arduino", "IoT", "MQTT"],
-      icon: <Zap className="w-8 h-8" />,
-      gradient: "from-blue-600 via-cyan-600 to-teal-600",
-      link: "https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine"
-    }
-  ];
+## 📊 GitHub Statistics
 
-  const StatCard = ({ title, value, icon, gradient, delay }) => {
-    const [count, setCount] = useState(0);
+<div align="center">
+  
+  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=upadhyaypranjal&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9)
+  
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=upadhyaypranjal&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
+  
+  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=upadhyaypranjal&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B35&currStreakLabel=C9D1D9)
+  
+</div>
 
-    useEffect(() => {
-      if (isVisible.stats) {
-        const target = parseInt(value);
-        const duration = 2000;
-        const steps = 60;
-        const increment = target / steps;
-        let current = 0;
+---
 
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            setCount(target);
-            clearInterval(timer);
-          } else {
-            setCount(Math.floor(current));
-          }
-        }, duration / steps);
+## 🛠️ Technical Skills
 
-        return () => clearInterval(timer);
-      }
-    }, [isVisible.stats, value]);
+<div align="center">
 
-    return (
-      <div
-        className={`transition-all duration-1000 ${
-          isVisible.stats ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-        style={{ transitionDelay: `${delay}ms` }}
-      >
-        <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl group relative overflow-hidden">
-          <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-          <div className={`relative inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${gradient} mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-            {icon}
-          </div>
-          <div className="relative">
-            <div className={`text-5xl font-bold mb-2 bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>
-              {count}+
-            </div>
-            <div className="text-gray-400 text-sm uppercase tracking-wider">
-              {title}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
+### Languages
+![Verilog](https://img.shields.io/badge/Verilog-00599C?style=for-the-badge&logo=v&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 animate-pulse"></div>
-        <div className="container mx-auto px-4 py-16 relative z-10 text-center">
-          <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 inline-flex items-center justify-center gap-3">
-            Hi There! 
-            <span 
-              className="inline-block text-6xl"
-              style={{
-                transform: `rotate(${waveRotation}deg)`,
-                transformOrigin: '70% 70%',
-                transition: 'transform 0.1s ease-in-out'
-              }}
-            >
-              👋
-            </span>
-          </h2>
+### Tools & Technologies
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white)
+![Vivado](https://img.shields.io/badge/Vivado-E01F27?style=for-the-badge&logo=xilinx&logoColor=white)
+![FPGA](https://img.shields.io/badge/FPGA-E01F27?style=for-the-badge&logo=xilinx&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-          <div 
-            className="inline-block my-8"
-            style={{
-              transform: `translateY(${floatOffset}px)`,
-              transition: 'transform 0.05s linear'
-            }}
-          >
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-5xl font-bold">
-                PU
-              </div>
-            </div>
-          </div>
+</div>
 
-          <h1 
-            className="text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
-            style={{
-              backgroundSize: '200% 200%',
-              backgroundPosition: `${gradientPosition}% 50%`
-            }}
-          >
-            Pranjal Upadhyay
-          </h1>
+---
 
-          <div className="flex justify-center gap-4">
-            <a href="https://www.linkedin.com/in/pranjalupadhyay0142/" className="transform hover:scale-110 transition-all duration-300">
-              <div className="p-3 bg-blue-600 rounded-lg shadow-lg hover:shadow-blue-500/50">
-                <Linkedin className="w-6 h-6" />
-              </div>
-            </a>
-            <a href="https://github.com/upadhyaypranjal" className="transform hover:scale-110 transition-all duration-300">
-              <div className="p-3 bg-gray-800 rounded-lg shadow-lg hover:shadow-gray-500/50">
-                <Github className="w-6 h-6" />
-              </div>
-            </a>
-            <a href="mailto:pranjal2004upadhyay@gmail.com" className="transform hover:scale-110 transition-all duration-300">
-              <div className="p-3 bg-red-600 rounded-lg shadow-lg hover:shadow-red-500/50">
-                <Mail className="w-6 h-6" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+## 🎯 Areas of Interest
 
-      <div className="container mx-auto px-4 py-20">
-        <div
-          ref={el => observerRefs.current[0] = el}
-          data-section="projects"
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible.projects ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <div className="inline-block relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 blur-2xl opacity-30 animate-pulse"></div>
-            <Award className="w-16 h-16 mx-auto mb-4 text-yellow-400 animate-bounce relative z-10" />
-          </div>
-          <h2 
-            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent"
-            style={{
-              backgroundSize: '200% 200%',
-              backgroundPosition: `${gradientPosition}% 50%`
-            }}
-          >
-            Featured Projects
-          </h2>
-          <div className="w-32 h-1 mx-auto mt-4 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-full"></div>
-        </div>
+- 💻 Digital Design & VLSI
+- 🔌 Embedded Systems & IoT
+- ⚡ Hardware-Software Integration
+- 🤖 Automation & Control Systems
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              ref={el => observerRefs.current[index + 1] = el}
-              data-section={`project-${index}`}
-              className={`transition-all duration-1000 ${
-                isVisible[`project-${index}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-              }`}
-              style={{ transitionDelay: `${index * 200}ms` }}
-            >
-              <a href={project.link} className="block group h-full">
-                <div className="relative h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-8 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                  <div className={`relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${project.gradient} mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
-                    <div className="text-white">{project.icon}</div>
-                  </div>
+---
 
-                  <h3 className="text-3xl font-bold mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-gray-400 text-base mb-6 leading-relaxed">
-                    {project.description}
-                  </p>
+## 📈 Contribution Activity
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className={`px-4 py-2 text-sm rounded-full bg-gradient-to-r ${project.gradient} bg-opacity-20 border border-current opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105`}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
+<div align="center">
+  
+  ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=upadhyaypranjal&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=58A6FF&line=1F6FEB&point=C9D1D9)
+  
+</div>
 
-      <div className="container mx-auto px-4 py-20">
-        <div
-          ref={el => observerRefs.current[10] = el}
-          data-section="stats"
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible.stats ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <div className="inline-block relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 blur-2xl opacity-30 animate-pulse"></div>
-            <TrendingUp className="w-16 h-16 mx-auto mb-4 text-green-400 animate-bounce relative z-10" />
-          </div>
-          <h2 
-            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent"
-            style={{
-              backgroundSize: '200% 200%',
-              backgroundPosition: `${gradientPosition}% 50%`
-            }}
-          >
-            GitHub Statistics
-          </h2>
-          <div className="w-32 h-1 mx-auto mt-4 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 rounded-full"></div>
-        </div>
+---
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          <StatCard
-            title="Repositories"
-            value={gitHubStats.repos}
-            icon={<GitBranch className="w-8 h-8 text-white" />}
-            gradient="from-blue-600 to-cyan-600"
-            delay={0}
-          />
-          <StatCard
-            title="Contributions"
-            value={gitHubStats.contributions}
-            icon={<GitCommit className="w-8 h-8 text-white" />}
-            gradient="from-purple-600 to-pink-600"
-            delay={200}
-          />
-          <StatCard
-            title="Stars Earned"
-            icon={<Star className="w-8 h-8 text-white" />}
-            value={gitHubStats.stars}
-            gradient="from-yellow-600 to-orange-600"
-            delay={400}
-          />
-          <StatCard
-            title="Projects"
-            value={gitHubStats.projects}
-            icon={<Code className="w-8 h-8 text-white" />}
-            gradient="from-green-600 to-teal-600"
-            delay={600}
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
+<div align="center">
+  
+  ### 💬 Let's Connect!
+  
+  I'm always interested in collaborating on innovative projects and learning new technologies.
+  
+  Feel free to reach out for project collaborations or just a tech chat! 🚀
+  
+  ![Profile Views](https://komarev.com/ghpvc/?username=upadhyaypranjal&color=blueviolet&style=for-the-badge)
+  
+</div>
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Pranjal Upadhyay</sub>
+</div>
