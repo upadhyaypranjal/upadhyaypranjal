@@ -1,18 +1,18 @@
 <div align="center">
 
-# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="50px" style="margin-bottom: -10px;"> **PRANJAL UPADHYAY** <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="50px" style="margin-bottom: -10px;">
+# <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=2000&pause=500&color=F75C7E&center=true&vCenter=true&width=800&height=80&lines=PRANJAL+UPADHYAY;प्रांजल+उपाध्याय;PRANJAL+UPADHYAY" alt="Name" />
 
 <h2>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Digital+Design+Enthusiast;IoT+Developer;FPGA+%26+VLSI+Explorer;Embedded+Systems+Engineer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Digital+Design+Enthusiast+💡;IoT+Developer+🌐;FPGA+%26+VLSI+Explorer+⚡;Embedded+Systems+Engineer+🔧" alt="Typing SVG" />
 </h2>
 
-### 🎓 B.Tech + M.Tech (Dual Degree) in Electronics & Communication Engineering
-### 🏛️ Indian Institute of Information Technology Design & Manufacturing, Kurnool
-### 📅 2023 - 2028
+### 🎓 **B.Tech + M.Tech (Dual Degree) in Electronics & Communication Engineering**
+### 🏛️ **Indian Institute of Information Technology Design & Manufacturing, Kurnool**
+### 📅 **2023 - 2028**
 
 <p align="center">
   <a href="https://www.linkedin.com/in/pranjalupadhyay0142/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&color=0077B5&animation=pulse" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&color=0077B5" alt="LinkedIn" />
   </a>
   <a href="https://github.com/upadhyaypranjal">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -28,13 +28,17 @@
 
 ---
 
-## 🏆 Featured Projects
+## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=F7B801&width=500&lines=🏆+Featured+Projects" alt="Featured Projects" />
 
 <table align="center">
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ 8-Bit Kogge-Stone Adder
+### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=8A2BE2&width=400&lines=⚡+8-Bit+Kogge-Stone+Adder" alt="8-Bit Kogge-Stone Adder" />
+
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2166/2166823.png" width="120" alt="Microchip"/>
+</p>
 
 **High-performance parallel prefix adder optimized for speed**
 
@@ -56,7 +60,11 @@ Designed and implemented with minimized carry propagation delay. Verified throug
 </td>
 <td width="50%" valign="top">
 
-### 🔐 ESP32 Electronic Voting Machine
+### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=00979D&width=550&lines=🔐+ESP32+Electronic+Voting+Machine" alt="ESP32 Voting Machine" />
+
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2990/2990508.png" width="120" alt="Voting Machine"/>
+</p>
 
 **Secure IoT voting system with real-time results**
 
@@ -83,11 +91,11 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 ---
 
-## 🛠️ Technical Skills
+## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=58A6FF&width=500&lines=🛠️+Technical+Skills" alt="Technical Skills" />
 
 <div align="center">
 
-### 💻 Programming Languages
+### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2000&pause=1000&color=3776AB&width=450&lines=💻+Programming+Languages" alt="Programming Languages" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Verilog-00599C?style=for-the-badge&logo=v&logoColor=white" />
@@ -96,7 +104,7 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
 </p>
 
-### 🔧 Tools & Technologies
+### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2000&pause=1000&color=F05032&width=500&lines=🔧+Tools+%26+Technologies" alt="Tools & Technologies" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
@@ -113,7 +121,7 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 ---
 
-## 📊 GitHub Statistics
+## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=FF6B35&width=500&lines=📊+GitHub+Statistics" alt="GitHub Statistics" />
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=upadhyaypranjal&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9&rank_icon=github" alt="GitHub Stats" />
@@ -128,27 +136,27 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 ---
 
-## 🎯 Areas of Interest
+## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=1ABC9C&width=500&lines=🎯+Areas+of+Interest" alt="Areas of Interest" />
 
 <div align="center">
 
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" width="80"><br>
-<b>Digital Design & VLSI</b>
+<img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" width="100"><br>
+<h3>Digital Design & VLSI</h3>
 </td>
 <td align="center" width="25%">
-<img src="https://media.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif" width="80"><br>
-<b>Embedded Systems & IoT</b>
+<img src="https://cdn-icons-png.flaticon.com/512/2282/2282188.png" width="100"><br>
+<h3>Embedded Systems & IoT</h3>
 </td>
 <td align="center" width="25%">
-<img src="https://media.giphy.com/media/3oKIPqsXYcdjcBcXL2/giphy.gif" width="80"><br>
-<b>Hardware-Software Integration</b>
+<img src="https://cdn-icons-png.flaticon.com/512/2166/2166823.png" width="100"><br>
+<h3>Hardware-Software Integration</h3>
 </td>
 <td align="center" width="25%">
-<img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="80"><br>
-<b>Automation & Control Systems</b>
+<img src="https://cdn-icons-png.flaticon.com/512/4941/4941238.png" width="100"><br>
+<h3>Automation & Control Systems</h3>
 </td>
 </tr>
 </table>
@@ -159,7 +167,7 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 ---
 
-## 📈 Contribution Activity
+## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=9B59B6&width=600&lines=📈+Contribution+Activity" alt="Contribution Activity" />
 
 <div align="center">
   
@@ -173,11 +181,11 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 <div align="center">
   
-  ## 💬 Let's Connect and Collaborate!
+  ## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=E74C3C&width=700&lines=💬+Let's+Connect+and+Collaborate!" alt="Let's Connect" />
   
-  ### I'm always interested in collaborating on innovative projects and learning new technologies.
+  ### **I'm always interested in collaborating on innovative projects and learning new technologies.**
   
-  ### Feel free to reach out for project collaborations or just a tech chat! 🚀
+  ### **Feel free to reach out for project collaborations or just a tech chat! 🚀**
   
   <p align="center">
     <a href="https://www.linkedin.com/in/pranjalupadhyay0142/">
@@ -196,7 +204,7 @@ Captures votes, prevents tampering, and transmits results in real-time via MQTT 
 
 <div align="center">
   
-  **Built with ❤️ by Pranjal Upadhyay**
+  ### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2000&pause=1000&color=F39C12&center=true&vCenter=true&width=500&lines=Built+with+❤️+by+Pranjal+Upadhyay" alt="Footer" />
   
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
   
