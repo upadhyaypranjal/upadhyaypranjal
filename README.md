@@ -1,85 +1,88 @@
----
-
-## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=BB9AF7&width=500&lines=🏆+Featured+Projects" alt="Featured Projects" />
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=BB9AF7&width=400&lines=⚡+8-Bit+Kogge-Stone+Adder" alt="8-Bit Kogge-Stone Adder" />
+<h1 align="center">👋 Hi There! I'm <span style="color:#61dafb;">Pranjal Upadhyay</span></h1>
 
 <p align="center">
-  <img src="assets/asic.svg" width="120" alt="ASIC Chip Icon"/>
-</p>
-
-**High-performance parallel prefix adder optimized for speed.**
-
-Designed and implemented with minimized carry propagation delay. Verified through comprehensive testbenches and synthesized for FPGA implementation.
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Verilog-00599C?style=for-the-badge&logo=v&logoColor=white" />
-  <img src="https://img.shields.io/badge/Digital_Design-FF6B35?style=for-the-badge&logo=proteus&logoColor=white" />
-  <img src="https://img.shields.io/badge/FPGA-E01F27?style=for-the-badge&logo=xilinx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Electronics%20&%20VLSI%20Enthusiast-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Embedded%20Systems%20%7C%20IoT%20%7C%20FPGA-orange?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder">
-    <img src="https://img.shields.io/badge/View_Project-BB9AF7?style=for-the-badge&logo=github&logoColor=white" alt="View Project" />
-  </a>
+  <img src="https://img.shields.io/github/followers/upadhyaypranjal?label=Followers&style=social" />
+  <img src="https://img.shields.io/github/stars/upadhyaypranjal?affiliations=OWNER&style=social" />
 </p>
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=00979D&width=550&lines=🔐+ESP32+Electronic+Voting+Machine" alt="ESP32 Voting Machine" />
-
-<p align="center">
-  <img src="assets/esp32.svg" width="120" alt="ESP32 Icon"/>
-</p>
-
-**Secure IoT voting system with real-time results.**
-
-Captures votes, prevents tampering, and transmits results in real-time via MQTT to a central server for secure and transparent elections.
-
-<p align="center">
-  <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine">
-    <img src="https://img.shields.io/badge/View_Project-00979D?style=for-the-badge&logo=github&logoColor=white" alt="View Project" />
-  </a>
-</p>
-
-</td>
-</tr>
-</table>
 
 ---
 
-## <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=2000&pause=1000&color=1ABC9C&width=500&lines=🎯+Areas+of+Interest" alt="Areas of Interest" />
+### 🌐 Connect With Me
+<p align="center">
+  <a href="https://www.linkedin.com/in/pranjalupadhyay0142/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://github.com/upadhyaypranjal">
+    <img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="mailto:pranjal2004upadhyay@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
 
-<div align="center">
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="assets/Arduino_ftdi_chip-1" width="100"><br>
-<h3>Digital Design & VLSI</h3>
-</td>
-<td align="center" width="25%">
-<img src="assets/es.jpg" width="100"><br>
-<h3>Embedded Systems & IoT</h3>
-</td>
-<td align="center" width="25%">
-<h3>Hardware-Software Integration</h3>
-</td>
-<td align="center" width="25%">
-<img src="assets/acs.jpg" width="100"><br>
-<h3>Automation & Control Systems</h3>
-</td>
-</tr>
-</table>
-</div>
+---
+
+## 🧠 About Me
+🎓 Engineering student at IIITDM Kurnool  
+💡 Passionate about **VLSI Design**, **Digital Systems**, **IoT**, and **Embedded Systems**  
+⚡ Currently exploring **FPGA design**, **Verilog HDL**, and **System-on-Chip architectures**  
+🌱 Always eager to learn, build, and contribute to open-source hardware projects  
+
+---
+
+## 🏆 Featured Projects
+
+### 🔹 [8-Bit Kogge-Stone Adder](https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder)
+> Designed and implemented a **high-performance parallel prefix adder** optimized for speed by minimizing carry propagation delay.  
+> ✅ Verified with testbenches and synthesized for FPGA implementation.  
+**Tech Stack:** `Verilog` • `Digital Design` • `FPGA` • `Vivado`
+
+---
+
+### 🔹 [ESP32 Electronic Voting Machine](https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine)
+> A **secure IoT-based voting system** using ESP32 and MQTT.  
+> Captures votes, prevents tampering, and transmits results in real-time to a central server.  
+**Tech Stack:** `ESP32` • `C++` • `Arduino` • `IoT` • `MQTT`
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=upadhyaypranjal&show_icons=true&theme=radical&count_private=true" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=upadhyaypranjal&theme=radical" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=upadhyaypranjal&layout=compact&theme=radical" />
+</p>
+
+---
+
+## 🧰 Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp,python,arduino,raspberrypi,verilog,vscode,github,linux" />
+</p>
+
+---
+
+## 🚀 Current Focus
+- 🔭 Implementing advanced digital systems in **Verilog & FPGA**
+- ⚙️ Exploring **Embedded IoT solutions** using ESP32 & Raspberry Pi
+- 🌟 Building real-world **VLSI and hardware-based projects**
+- 💬 Open to collaborations in **digital design, embedded systems, and FPGA-based innovations**
+
+---
+
+### 💫 "The best circuits are built not from wires, but from passion and persistence."
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=upadhyaypranjal&label=Profile%20Views&color=blueviolet&style=flat-square" />
+</p>
