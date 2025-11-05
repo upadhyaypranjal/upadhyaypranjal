@@ -10,7 +10,7 @@
 
 ## About Me
 
-I am currently pursuing my studies in the **Indian Institute of Information Technology, Design and Manufacturing, Kurnool (IIITDM Kurnool)**.
+I am pursuing an **Integrated B.Tech + M.Tech program in Electronics and Communication Engineering (ECE)** at the **Indian Institute of Information Technology, Design and Manufacturing, Kurnool (IIITDM Kurnool).**
 I am passionate about **VLSI Design, Digital Systems, and Processor Architecture**, and I enjoy working on hardware projects that combine creativity with rigorous engineering.
 
 ```typescript
@@ -30,7 +30,7 @@ const Pranjal = {
 <tr>
 <td width="50%">
 
-### 32-Bit Kogge-Stone Adder (High-Speed)
+### **32-Bit Kogge-Stone Adder (High-Speed)**
 
 [Repo Link](https://github.com/upadhyaypranjal/8-Bit-Kogge-Stone-Adder)
 
@@ -45,7 +45,7 @@ Optimized parallel-prefix adder designed for speed and scalability.
 
 [Repo Link](https://github.com/upadhyaypranjal/ESP32-based-Electronic-Voting-Machine)
 
-Secure IoT-based voting platform with real-time result monitoring.
+Secure IoT-based voting platform with real‑time result monitoring.
 
 **Tech:** ESP32 | MQTT | C++ | Embedded Systems
 
@@ -78,7 +78,7 @@ Secure IoT-based voting platform with real-time result monitoring.
 
 [LinkedIn](https://www.linkedin.com/in/pranjalupadhyay0142/) |
 [GitHub](https://github.com/upadhyaypranjal) |
-[Email](mailto:pranjal2004upadhyay@gmail.com)
+[Email](mailto:pranjal2004upadhyay@gmail.com?subject=Hello%20Pranjal%20&body=Hi%20Pranjal,)
 
 </div>
 
